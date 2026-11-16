@@ -187,6 +187,20 @@
   .svc details[open] .chev{transform:rotate(180deg)}
   .svc summary p{font-size:14px;line-height:1.65;color:var(--ink-mid);margin-top:12px;font-weight:400}
   .svc .more{font-size:14px;line-height:1.65;color:var(--ink-mid);margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+
+  /* group */
+  .group{padding:72px 0 40px}
+  .group-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+  @media(max-width:760px){.group-grid{grid-template-columns:1fr;gap:32px}}
+  .group h2{font-size:clamp(38px,6vw,56px);line-height:1.06;margin:18px 0 20px;color:var(--navy)}
+  .group h2 em{display:block;font-weight:300;color:var(--steel)}
+  .group .intro{color:var(--ink-mid);font-size:16px;max-width:460px;margin-bottom:30px}
+  .group .eu-quote{margin-top:0}
+  .facts{background:var(--bg-alt);border:1px solid var(--steel-200)}
+  .facts ul{list-style:none;padding:8px 0}
+  .facts ul+ul{border-top:1px solid var(--line)}
+  .facts li{position:relative;padding:10px 24px 10px 52px;font-size:14px;line-height:1.55;color:var(--ink)}
+  .facts li::before{content:"";position:absolute;left:24px;top:19px;width:14px;height:1px;background:var(--steel)}
 </style>
 </head>
 <body>
@@ -413,6 +427,40 @@
             <p class="more">Documents, filings and correspondence with tax offices and registries are prepared accurately in Polish by our own team – not machine-translated approximations – and explained to you in English.</p>
           </details>
         </article>
+    </div>
+  </div>
+</section>
+
+<section class="group">
+  <div class="wrap group-grid">
+    <div>
+      <div class="label label-line">J. Dauman Group</div>
+      <h2>Scale and international <em>experience.</em></h2>
+      <p class="intro">Supporting business decisions in international expansion. Providing structured, compliant support for businesses operating across jurisdictions, for 78 years.</p>
+      <blockquote class="eu-quote">
+        <p>We operate within a real international regulatory environment, which is why our clients’ expansion decisions are structured and deliberate.</p>
+      </blockquote>
+    </div>
+    <div class="facts">
+        <ul>
+          <li>78 years of market presence supporting cross-border business decisions</li>
+        </ul>
+        <ul>
+          <li>Working closely with the Polish Embassy</li>
+          <li>Member of the Chartered Institute of Export &amp; International Trade</li>
+        </ul>
+        <ul>
+          <li>Operational presence in London, Warsaw and Kraków</li>
+          <li>Over 3,000 clients supported across accounting, structuring and international expansion</li>
+        </ul>
+        <ul>
+          <li>Experience in international investments and cross-border structuring</li>
+          <li>ACCA Chartered Certified Accountants, authorised for public practice</li>
+        </ul>
+        <ul>
+          <li>Compliance standards grounded in UK and international regulatory frameworks</li>
+          <li>Working closely with the Partner, European Chamber of Commerce, embassies and trade institutions</li>
+        </ul>
     </div>
   </div>
 </section>
