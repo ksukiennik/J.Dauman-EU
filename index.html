@@ -146,6 +146,22 @@
   .eu-quote::before{content:"\201C";position:absolute;left:18px;top:14px;font-size:64px;line-height:1;color:var(--steel-300);font-weight:700}
   .eu-quote p{font-size:clamp(18px,2.2vw,21px);font-weight:300;line-height:1.6;color:var(--navy)}
   .eu-quote cite{display:block;margin-top:20px;font-style:normal;font-family:var(--label);font-weight:700;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-light)}
+
+  .eu-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:56px}
+  @media(max-width:900px){.eu-cards{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.eu-cards{grid-template-columns:1fr}}
+  .eu-card{background:var(--bg-alt);border-radius:4px;box-shadow:0 1px 3px rgba(22,35,42,.08);overflow:hidden;display:flex;flex-direction:column}
+  .eu-media{aspect-ratio:2/1;background:var(--sky-100);overflow:hidden}
+  .eu-media svg,.eu-media img{display:block;width:100%;height:100%;object-fit:cover}
+  .eu-body{padding:24px 22px 22px;display:flex;flex-direction:column;flex:1}
+  .eu-body h3{font-size:19px;font-weight:700;color:var(--navy);line-height:1.25;margin-bottom:10px}
+  .eu-body>p{font-size:14px;color:var(--ink-mid);line-height:1.65}
+  .eu-card details{border:0;padding:0;margin-top:auto}
+  .eu-card details:first-of-type{border:0}
+  .eu-card summary{display:inline-flex;gap:6px;margin-top:18px;font-family:var(--label);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-light)}
+  .eu-card summary::after{content:"\2193";font-size:12px;color:var(--ink-light)}
+  .eu-card details[open] summary::after{content:"\2191"}
+  .eu-card details p{font-size:14px;line-height:1.65;color:var(--ink-mid);margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -196,7 +212,108 @@
         <cite>J. Dauman &amp; Co, our approach</cite>
       </blockquote>
     </div>
-  </div>
+
+    <div class="eu-cards">
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="320" y="80" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="40" y="200" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="320" y="80" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="320" y="160" width="80" height="80" fill="#A9C0C8" opacity="0.55"/><rect x="80" y="200" width="80" height="80" fill="#87A4AE" opacity="1"/><rect x="40" y="80" width="40" height="40" fill="#C4E2F0" opacity="0.55"/><rect x="160" y="160" width="80" height="80" fill="#C6D6DC" opacity="0.75"/><rect x="280" y="80" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="80" y="160" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="240" y="120" width="80" height="80" fill="#56737D" opacity="0.75"/><rect x="200" y="200" width="80" height="80" fill="#56737D" opacity="0.55"/><rect x="200" y="40" width="40" height="40" fill="#56737D" opacity="1"/><rect x="80" y="120" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="160" y="120" width="40" height="40" fill="#87A4AE" opacity="0.75"/></svg></div>
+        <div class="eu-body">
+          <h3>Market Scale</h3>
+          <p>Access to over 450 million consumers across 27 member states within a single, integrated regulatory framework.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>One set of EU rules on product standards, consumer protection and the free movement of goods applies across all 27 member states. A single EU entity can therefore serve customers from Lisbon to Helsinki without negotiating market access country by country, and without the customs friction UK exporters have faced since 2021.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="360" y="80" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="400" y="40" width="40" height="40" fill="#87A4AE" opacity="1"/><rect x="400" y="40" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="320" y="0" width="80" height="80" fill="#A9C0C8" opacity="1"/><rect x="320" y="80" width="80" height="80" fill="#C4E2F0" opacity="1"/><rect x="280" y="80" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="320" y="0" width="80" height="80" fill="#A9C0C8" opacity="0.75"/><rect x="360" y="0" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="240" y="40" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="440" y="80" width="80" height="80" fill="#C6D6DC" opacity="0.55"/><rect x="320" y="120" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="240" y="0" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="160" y="120" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="320" y="120" width="40" height="40" fill="#87A4AE" opacity="0.55"/></svg></div>
+        <div class="eu-body">
+          <h3>Post-Brexit Regulatory Divergence</h3>
+          <p>UK and EU rules are diverging across product standards, data law, professional qualifications and financial services – and the gap is widening each year.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>Each divergence adds compliance cost for businesses selling into the EU from the UK. An EU-based entity lets you work to EU rules directly, with local advisers who track changes as they happen, instead of re-certifying or restructuring every time the two regimes move apart.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="280" y="80" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="440" y="80" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="360" y="120" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="360" y="40" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="200" y="160" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="160" y="0" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="440" y="120" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="320" y="0" width="80" height="80" fill="#C4E2F0" opacity="1"/><rect x="120" y="80" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="120" y="120" width="40" height="40" fill="#87A4AE" opacity="1"/><rect x="240" y="40" width="40" height="40" fill="#87A4AE" opacity="0.75"/><rect x="160" y="80" width="40" height="40" fill="#56737D" opacity="1"/><rect x="440" y="160" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="280" y="80" width="40" height="40" fill="#A9C0C8" opacity="0.75"/></svg></div>
+        <div class="eu-body">
+          <h3>Regulatory Stability</h3>
+          <p>Operate within established legal and reporting frameworks that provide contractual certainty and operational predictability across all 27 member states.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>EU directives and regulations give a common baseline for company law, accounting, VAT and data protection. That predictability makes it easier to plan investment, secure financing and sign long-term contracts with European partners who prefer to deal with an EU counterparty.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="240" y="40" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="200" y="40" width="40" height="40" fill="#87A4AE" opacity="0.75"/><rect x="440" y="0" width="40" height="40" fill="#56737D" opacity="0.55"/><rect x="440" y="120" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="320" y="160" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="200" y="160" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="360" y="80" width="40" height="40" fill="#C4E2F0" opacity="0.55"/><rect x="280" y="160" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="320" y="160" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="440" y="40" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="280" y="160" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="320" y="160" width="40" height="40" fill="#56737D" opacity="0.55"/><rect x="200" y="40" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="440" y="40" width="80" height="80" fill="#A9C0C8" opacity="0.75"/></svg></div>
+        <div class="eu-body">
+          <h3>Tax Structuring</h3>
+          <p>Several EU member states offer corporate tax rates materially below the UK's 25% standard rate. Structured correctly, the right EU jurisdiction can reduce your effective tax burden significantly – compliantly and permanently.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>The benefit depends on substance: where decisions are made, where people work and how profits are attributed between the UK and EU entities. We review transfer pricing, double tax treaties and permanent establishment risk before recommending a structure, so the saving holds up under scrutiny from both tax authorities.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="0" y="120" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="0" y="160" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="0" y="0" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="240" y="160" width="80" height="80" fill="#A9C0C8" opacity="1"/><rect x="0" y="0" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="80" y="40" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="80" y="40" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="280" y="0" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="40" y="40" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="0" y="160" width="80" height="80" fill="#A9C0C8" opacity="0.55"/><rect x="200" y="80" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="80" y="120" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="120" y="80" width="80" height="80" fill="#C6D6DC" opacity="1"/><rect x="160" y="40" width="40" height="40" fill="#C4E2F0" opacity="0.55"/></svg></div>
+        <div class="eu-body">
+          <h3>Global Trade Platform</h3>
+          <p>An EU entity is not just a gateway to Europe – it unlocks preferential access to over 70 countries through the EU's external trade agreement network.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>Goods that qualify under EU rules of origin can benefit from reduced or zero tariffs under the EU's agreements with partners such as Japan, Canada, South Korea and Mexico. For businesses with ambitions beyond Europe, an EU base can widen market access rather than duplicate it.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="400" y="0" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="440" y="80" width="40" height="40" fill="#56737D" opacity="1"/><rect x="240" y="160" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="360" y="160" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="400" y="40" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="240" y="120" width="40" height="40" fill="#87A4AE" opacity="0.75"/><rect x="360" y="160" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="200" y="80" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="200" y="0" width="80" height="80" fill="#C4E2F0" opacity="1"/><rect x="240" y="80" width="80" height="80" fill="#C6D6DC" opacity="0.75"/><rect x="320" y="80" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="240" y="80" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="280" y="80" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="280" y="80" width="40" height="40" fill="#87A4AE" opacity="1"/></svg></div>
+        <div class="eu-body">
+          <h3>Workforce & Talent Access</h3>
+          <p>An EU-registered entity can hire across all 27 member states without visa sponsorship, unlocking a 220 million-strong workforce on commercially competitive terms.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>Freedom of movement means an EU entity can recruit EU nationals in any member state on local contracts. Markets such as Poland combine a large pool of skilled, English-speaking professionals with employment costs well below London levels.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="320" y="80" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="40" y="0" width="80" height="80" fill="#87A4AE" opacity="0.55"/><rect x="200" y="0" width="40" height="40" fill="#87A4AE" opacity="1"/><rect x="80" y="40" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="280" y="0" width="80" height="80" fill="#A9C0C8" opacity="1"/><rect x="40" y="0" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="240" y="80" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="40" y="80" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="360" y="160" width="40" height="40" fill="#56737D" opacity="1"/><rect x="40" y="120" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="120" y="0" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="280" y="80" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="280" y="40" width="80" height="80" fill="#56737D" opacity="0.55"/><rect x="360" y="120" width="40" height="40" fill="#56737D" opacity="1"/></svg></div>
+        <div class="eu-body">
+          <h3>Access to Financial Systems</h3>
+          <p>Local banking access and integration within European financial infrastructure, including SEPA payments and EU capital markets.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>A local EU bank account with an EU IBAN simplifies euro collections and supplier payments, reduces FX and transfer costs, and removes the friction some EU customers face when paying a UK account. It also opens the door to EU lenders, grants and investment programmes.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="360" y="80" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="120" y="0" width="80" height="80" fill="#A9C0C8" opacity="0.75"/><rect x="320" y="0" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="320" y="0" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="120" y="80" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="320" y="80" width="40" height="40" fill="#87A4AE" opacity="1"/><rect x="280" y="0" width="80" height="80" fill="#C4E2F0" opacity="1"/><rect x="120" y="0" width="80" height="80" fill="#56737D" opacity="1"/><rect x="360" y="0" width="40" height="40" fill="#87A4AE" opacity="0.75"/><rect x="120" y="80" width="80" height="80" fill="#56737D" opacity="0.55"/><rect x="160" y="0" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="320" y="0" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="80" y="0" width="40" height="40" fill="#C4E2F0" opacity="0.55"/><rect x="360" y="120" width="80" height="80" fill="#87A4AE" opacity="1"/></svg></div>
+        <div class="eu-body">
+          <h3>Strategic Positioning</h3>
+          <p>Establishing a registered presence inside the European regulatory framework changes commercial position from external supplier to internal market participant.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>Many EU buyers, distributors and public-sector tenders favour or require an EU-registered counterparty. A local entity, local VAT number and local contact point signal long-term commitment and remove a common objection in procurement processes.</p>
+          </details>
+        </div>
+      </article>
+      <article class="eu-card">
+        <div class="eu-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="280" y="0" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="0" y="120" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="280" y="120" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="200" y="0" width="40" height="40" fill="#87A4AE" opacity="0.75"/><rect x="0" y="40" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="120" y="0" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="40" y="120" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="80" y="80" width="40" height="40" fill="#87A4AE" opacity="0.75"/><rect x="160" y="120" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="240" y="40" width="40" height="40" fill="#87A4AE" opacity="1"/><rect x="240" y="120" width="80" height="80" fill="#56737D" opacity="0.75"/><rect x="160" y="40" width="40" height="40" fill="#56737D" opacity="0.55"/><rect x="280" y="120" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="280" y="0" width="80" height="80" fill="#A9C0C8" opacity="1"/></svg></div>
+        <div class="eu-body">
+          <h3>Institutional Connectivity</h3>
+          <p>Access to European business chambers, embassy networks and trade institutions that accelerate market entry and provide commercial intelligence.</p>
+          <details>
+            <summary>Expand for analysis</summary>
+            <p>Chambers of commerce, trade agencies and embassy networks provide introductions, sector data and market-entry support. Our liaison with the Polish Embassy and membership of the Chartered Institute of Export & International Trade help clients plug into these networks from day one.</p>
+          </details>
+        </div>
+      </article>
+    </div>  </div>
 </section>
 
 <section>
