@@ -162,6 +162,31 @@
   .eu-card summary::after{content:"\2193";font-size:12px;color:var(--ink-light)}
   .eu-card details[open] summary::after{content:"\2191"}
   .eu-card details p{font-size:14px;line-height:1.65;color:var(--ink-mid);margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
+
+  /* why us */
+  .why-us{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--sky) 0%,var(--sky-100) 100%);padding:72px 0 64px}
+  .why-us .skyline{position:absolute;right:0;top:0;width:min(60%,620px);height:auto;color:#fff;opacity:.35;pointer-events:none}
+  .why-us .wrap{position:relative}
+  .why-us h2{font-size:clamp(38px,6.5vw,60px);line-height:1.05;margin:18px 0 20px;color:var(--navy);max-width:640px}
+  .why-us h2 em{display:block;font-weight:300;color:var(--steel-600)}
+  .why-us .intro{max-width:560px;color:var(--ink);font-size:16px}
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:44px;background:var(--steel-300);border:2px solid var(--steel-300)}
+  @media(max-width:900px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:560px){.svc-grid{grid-template-columns:1fr}}
+  .svc{background:var(--bg-alt);display:flex;flex-direction:column}
+  .svc-media{aspect-ratio:16/9;overflow:hidden;background:var(--sky-100)}
+  .svc-media svg,.svc-media img{display:block;width:100%;height:100%;object-fit:cover}
+  .svc details{border:0!important;padding:20px 20px 22px}
+  .svc summary{display:block;cursor:pointer}
+  .svc summary::after,.svc details[open] summary::after{content:none}
+  .svc summary::-webkit-details-marker{display:none}
+  .svc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+  .svc h3{font-size:18px;font-weight:700;color:var(--navy);line-height:1.3}
+  .chev{flex-shrink:0;width:24px;height:24px;border:1px solid var(--steel-300);border-radius:50%;position:relative;transition:transform .2s}
+  .chev::before{content:"";position:absolute;left:8px;top:6px;width:6px;height:6px;border-right:1.5px solid var(--steel);border-bottom:1.5px solid var(--steel);transform:rotate(45deg)}
+  .svc details[open] .chev{transform:rotate(180deg)}
+  .svc summary p{font-size:14px;line-height:1.65;color:var(--ink-mid);margin-top:12px;font-weight:400}
+  .svc .more{font-size:14px;line-height:1.65;color:var(--ink-mid);margin-top:12px;padding-top:12px;border-top:1px solid var(--line)}
 </style>
 </head>
 <body>
@@ -316,16 +341,78 @@
     </div>  </div>
 </section>
 
-<section>
+<section class="why-us">
+  <svg class="skyline" viewBox="0 0 600 400" preserveAspectRatio="xMaxYMax meet" aria-hidden="true"><g fill="currentColor">
+<rect x="20" y="250" width="60" height="150"/><rect x="95" y="200" width="45" height="200"/>
+<polygon points="300,20 304,120 296,120"/><rect x="292" y="120" width="16" height="30"/><rect x="280" y="150" width="40" height="40"/>
+<rect x="268" y="190" width="64" height="40"/><rect x="250" y="230" width="100" height="40"/><rect x="225" y="270" width="150" height="130"/>
+<rect x="180" y="300" width="45" height="100"/><rect x="375" y="300" width="45" height="100"/>
+<polygon points="450,110 500,95 500,400 450,400"/><rect x="515" y="170" width="50" height="230"/></g></svg>
   <div class="wrap">
-    <div class="label">Why J. Dauman &amp; Co</div>
-    <h2>Expanding into the EU requires <em>more than incorporation.</em></h2>
-    <p class="sub">Most advisers list the same services. What makes expansion work is having them joined up – with people on the ground.</p>
-    <div class="grid">
-      <div class="card"><h3>Our own team in Poland</h3><p>Offices in Warsaw and Kraków and a Polish-speaking team – not a referral to a third-party network.</p></div>
-      <div class="card"><h3>One firm, both sides</h3><p>A UK-regulated firm holding both your UK and EU positions. No conflicting advice, no gaps between advisers.</p></div>
-      <div class="card"><h3>Accounting, legal and logistics</h3><p>Tax and compliance, company formation and moving goods across the border – handled by one group.</p></div>
-      <div class="card"><h3>Clear cost structure</h3><p>Timeline and costs set out in the initial assessment, with no hidden obligations introduced after setup.</p></div>
+    <div class="label label-line">Why J. Dauman &amp; Co</div>
+    <h2>Expanding into the EU <em>requires more than incorporation.</em></h2>
+    <p class="intro">It involves structure, coordination and long-term oversight. Our role is to provide a clear and accountable framework throughout that process, from initial assessment through to ongoing compliance.</p>
+    <div class="svc-grid">
+        <article class="svc">
+          <div class="svc-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="280" y="40" width="80" height="80" fill="#C4E2F0" opacity="0.75"/><rect x="320" y="0" width="40" height="40" fill="#87A4AE" opacity="1"/><rect x="280" y="80" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="120" y="80" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="120" y="80" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="240" y="120" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="40" y="40" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="80" y="160" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="0" y="40" width="80" height="80" fill="#C6D6DC" opacity="0.55"/><rect x="320" y="0" width="40" height="40" fill="#56737D" opacity="1"/><rect x="160" y="160" width="40" height="40" fill="#56737D" opacity="1"/><rect x="200" y="160" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="0" y="0" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="120" y="120" width="80" height="80" fill="#56737D" opacity="0.75"/></svg></div>
+          <details>
+            <summary>
+              <span class="svc-head"><h3>Structured EU Establishment</h3><span class="chev" aria-hidden="true"></span></span>
+              <p>EU entities, registration, VAT setup and office arrangements – each structure built to match your commercial model.</p>
+            </summary>
+            <p class="more">We choose the jurisdiction and legal form with you, register the company, obtain VAT and EORI numbers, open banking and arrange a registered office. The timeline and costs are set out in the initial assessment, with no hidden obligations introduced after setup.</p>
+          </details>
+        </article>
+        <article class="svc">
+          <div class="svc-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="280" y="40" width="80" height="80" fill="#C6D6DC" opacity="1"/><rect x="80" y="40" width="80" height="80" fill="#56737D" opacity="0.55"/><rect x="80" y="120" width="80" height="80" fill="#C6D6DC" opacity="1"/><rect x="160" y="120" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="0" y="80" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="240" y="0" width="80" height="80" fill="#56737D" opacity="0.55"/><rect x="160" y="0" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="200" y="40" width="40" height="40" fill="#87A4AE" opacity="0.75"/><rect x="320" y="80" width="80" height="80" fill="#C6D6DC" opacity="0.75"/><rect x="320" y="0" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="280" y="120" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="120" y="120" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="320" y="120" width="80" height="80" fill="#87A4AE" opacity="1"/><rect x="120" y="40" width="40" height="40" fill="#56737D" opacity="1"/></svg></div>
+          <details>
+            <summary>
+              <span class="svc-head"><h3>Ongoing Accounting &amp; Coordination</h3><span class="chev" aria-hidden="true"></span></span>
+              <p>Local accounting, reporting and compliance – maintained continuously as your EU presence matures.</p>
+            </summary>
+            <p class="more">Bookkeeping, VAT returns, payroll and statutory filings are kept aligned with your UK accounts, so group reporting stays consistent and nothing falls between two sets of advisers.</p>
+          </details>
+        </article>
+        <article class="svc">
+          <div class="svc-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="280" y="0" width="40" height="40" fill="#A9C0C8" opacity="0.75"/><rect x="200" y="0" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="240" y="120" width="80" height="80" fill="#C6D6DC" opacity="1"/><rect x="200" y="40" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="360" y="0" width="80" height="80" fill="#56737D" opacity="0.55"/><rect x="440" y="120" width="80" height="80" fill="#C4E2F0" opacity="0.75"/><rect x="120" y="120" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="200" y="40" width="80" height="80" fill="#87A4AE" opacity="0.75"/><rect x="160" y="120" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="400" y="80" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="240" y="0" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="400" y="0" width="80" height="80" fill="#C4E2F0" opacity="1"/><rect x="160" y="0" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="160" y="40" width="40" height="40" fill="#C4E2F0" opacity="0.75"/></svg></div>
+          <details>
+            <summary>
+              <span class="svc-head"><h3>Cross-Border Alignment</h3><span class="chev" aria-hidden="true"></span></span>
+              <p>One regulated firm holding both sides of your UK–EU structure – no gaps, no conflicting advice.</p>
+            </summary>
+            <p class="more">As an ACCA-regulated UK practice with our own teams in Poland, we see the whole structure: intercompany agreements, transfer pricing and tax residence are planned once, from both sides.</p>
+          </details>
+        </article>
+        <article class="svc">
+          <div class="svc-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="360" y="80" width="40" height="40" fill="#56737D" opacity="1"/><rect x="80" y="0" width="40" height="40" fill="#C4E2F0" opacity="0.75"/><rect x="200" y="0" width="80" height="80" fill="#56737D" opacity="0.75"/><rect x="160" y="0" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="320" y="80" width="40" height="40" fill="#C4E2F0" opacity="0.55"/><rect x="160" y="160" width="40" height="40" fill="#C4E2F0" opacity="0.55"/><rect x="280" y="80" width="80" height="80" fill="#87A4AE" opacity="0.55"/><rect x="400" y="120" width="80" height="80" fill="#A9C0C8" opacity="0.55"/><rect x="240" y="0" width="80" height="80" fill="#C6D6DC" opacity="0.75"/><rect x="240" y="120" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="320" y="120" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="200" y="160" width="80" height="80" fill="#C6D6DC" opacity="0.75"/><rect x="320" y="120" width="40" height="40" fill="#56737D" opacity="0.55"/><rect x="200" y="160" width="40" height="40" fill="#C4E2F0" opacity="0.55"/></svg></div>
+          <details>
+            <summary>
+              <span class="svc-head"><h3>Practical Guidance Throughout</h3><span class="chev" aria-hidden="true"></span></span>
+              <p>Step-by-step support through every administrative, procedural and language barrier you will encounter.</p>
+            </summary>
+            <p class="more">You get a named contact who explains each step before it happens – what is needed, who signs what and when – from the first conversation to the point where the entity is trading.</p>
+          </details>
+        </article>
+        <article class="svc">
+          <div class="svc-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="360" y="0" width="40" height="40" fill="#C6D6DC" opacity="0.55"/><rect x="320" y="80" width="40" height="40" fill="#C6D6DC" opacity="1"/><rect x="160" y="0" width="80" height="80" fill="#87A4AE" opacity="0.75"/><rect x="120" y="0" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="240" y="0" width="80" height="80" fill="#87A4AE" opacity="1"/><rect x="280" y="0" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="120" y="80" width="80" height="80" fill="#56737D" opacity="0.55"/><rect x="160" y="120" width="80" height="80" fill="#C4E2F0" opacity="0.55"/><rect x="240" y="0" width="80" height="80" fill="#C6D6DC" opacity="1"/><rect x="80" y="40" width="40" height="40" fill="#C4E2F0" opacity="1"/><rect x="280" y="0" width="40" height="40" fill="#56737D" opacity="0.75"/><rect x="80" y="40" width="80" height="80" fill="#A9C0C8" opacity="0.55"/><rect x="320" y="80" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="360" y="0" width="40" height="40" fill="#56737D" opacity="0.55"/></svg></div>
+          <details>
+            <summary>
+              <span class="svc-head"><h3>Network &amp; Institutional Connectivity</h3><span class="chev" aria-hidden="true"></span></span>
+              <p>Introductions to partners, trade institutions and commercial networks across our operating markets.</p>
+            </summary>
+            <p class="more">Through our Polish Embassy liaison, CIEIT membership and local contacts in Warsaw and Kraków, we introduce clients to banks, landlords, recruiters, logistics partners and trade bodies.</p>
+          </details>
+        </article>
+        <article class="svc">
+          <div class="svc-media"><svg viewBox="0 0 480 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="100%" height="100%" fill="#E7F3F9"/><rect x="440" y="120" width="80" height="80" fill="#56737D" opacity="1"/><rect x="360" y="200" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="120" y="200" width="40" height="40" fill="#56737D" opacity="0.55"/><rect x="200" y="80" width="40" height="40" fill="#87A4AE" opacity="0.55"/><rect x="440" y="40" width="40" height="40" fill="#C4E2F0" opacity="0.55"/><rect x="400" y="80" width="40" height="40" fill="#56737D" opacity="1"/><rect x="240" y="40" width="40" height="40" fill="#C6D6DC" opacity="0.75"/><rect x="160" y="200" width="40" height="40" fill="#56737D" opacity="1"/><rect x="400" y="160" width="40" height="40" fill="#87A4AE" opacity="1"/><rect x="400" y="40" width="40" height="40" fill="#A9C0C8" opacity="1"/><rect x="440" y="200" width="80" height="80" fill="#A9C0C8" opacity="1"/><rect x="320" y="40" width="80" height="80" fill="#C6D6DC" opacity="0.75"/><rect x="400" y="200" width="40" height="40" fill="#A9C0C8" opacity="0.55"/><rect x="360" y="160" width="40" height="40" fill="#87A4AE" opacity="1"/></svg></div>
+          <details>
+            <summary>
+              <span class="svc-head"><h3>Language &amp; Administrative Support</h3><span class="chev" aria-hidden="true"></span></span>
+              <p>Polish-speaking team handling documentation, filings and correspondence in the language the jurisdiction requires.</p>
+            </summary>
+            <p class="more">Documents, filings and correspondence with tax offices and registries are prepared accurately in Polish by our own team – not machine-translated approximations – and explained to you in English.</p>
+          </details>
+        </article>
     </div>
   </div>
 </section>
